@@ -16,5 +16,14 @@ public class LeyPregunta {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_ley")
     private Ley idLey;
+    @Id
+    private Long id;
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getId() {
+        return id;
+    }
 }
