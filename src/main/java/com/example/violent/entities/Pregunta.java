@@ -16,7 +16,7 @@ public class Pregunta {
     @Column(name = "descripcion")
     private String descripcion;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "id_nivel")
     private Nivel idNivel;
 

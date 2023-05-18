@@ -20,7 +20,7 @@ public class Usuario {
     @Column(name = "genero")
     private Character genero;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "id_estado")
     private Estado idEstado;
 

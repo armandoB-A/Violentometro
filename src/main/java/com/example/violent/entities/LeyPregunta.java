@@ -9,11 +9,11 @@ import lombok.Setter;
 @Entity
 @Table(name = "ley_pregunta")
 public class LeyPregunta {
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "id_pregunta")
     private Pregunta idPregunta;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "id_ley")
     private Ley idLey;
     @Id
